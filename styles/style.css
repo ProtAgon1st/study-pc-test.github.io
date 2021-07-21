@@ -1,0 +1,511 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Microsoft YaHei";
+}
+img {
+  /* 取消图片底侧有空隙的问题 */
+  vertical-align: middle;
+}
+body {
+  background-color: #f3f5f7;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.w {
+  width: 1200px;
+  margin: 0 auto;
+}
+.aside {
+  position: fixed;
+  top: 60%;
+  left: 50%;
+  margin-left: 650px;
+  width: 150px;
+  height: 200px;
+  border-radius: 5px;
+  background: rgb(0, 150, 200);
+}
+.aside dl {
+  text-align: center;
+  margin: 20px 30px;
+  font-size: 18px;
+  line-height: 35px;
+}
+.aside dl dd {
+  border-bottom: 1px white solid;
+}
+.aside dl a {
+  color: white;
+}
+
+/* header开始 */
+.header {
+  /* position: sticky;
+  top: 0;
+  z-index: 1; */
+  height: 42px;
+  margin: 30px auto;
+}
+.header .logo {
+  float: left;
+  width: 195px;
+  height: 42px;
+}
+.header .nav {
+  float: left;
+  margin-left: 70px;
+}
+
+.header .nav ul li {
+  float: left;
+  height: 42px;
+  margin-right: 25px;
+  font-size: 18px;
+  line-height: 42px;
+}
+.header .nav ul .zhiye {
+  margin-right: 0px;
+}
+
+.header .nav ul li a {
+  display: block;
+  padding: 0 9px;
+  height: 42px;
+  color: #050505;
+}
+
+.header .nav ul li a:hover {
+  color: #00a4ff;
+  border-bottom: 2px #00a4ff solid;
+  /* box-shadow: 0px 0px 1px 1px rgba(248, 191, 0.5) inset; */
+}
+.header .search {
+  float: left;
+  width: 411px;
+  height: 42px;
+  margin-left: 86px;
+}
+.header .search .text {
+  float: left;
+  width: 345px;
+  height: 42px;
+  border: 1px solid #00a4ff;
+  border-right: 0;
+  color: black;
+  font-size: 14px;
+  padding-left: 15px;
+  outline: none;
+}
+.header .search .text::placeholder {
+  color: rgb(185, 181, 181);
+}
+.header .search .button {
+  float: left;
+  width: 50px;
+  height: 42px;
+  border: none;
+  background: url(../images/fa-search.png);
+  cursor: pointer;
+  outline: none;
+}
+.header .login {
+  float: left;
+  height: 42px;
+  margin-left: 30px;
+}
+
+.header .login img {
+  vertical-align: middle;
+  width: 30px;
+
+  height: 30px;
+  border-radius: 15px;
+}
+.header .login .user-name {
+  display: inline-block;
+  margin-left: 5px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 42px;
+}
+/* header结束 */
+
+/* bannar开始 */
+
+.bannar {
+  height: 420px;
+  background-color: #1c036c;
+}
+
+.bannar .main {
+  height: 420px;
+  background: url(../images/banner2.png) no-repeat top center;
+}
+
+.bannar .main .subnav {
+  float: left;
+  height: 420px;
+  width: 190px;
+  background: rgba(20, 2, 75, 0.7);
+}
+
+.bannar .main .subnav .bd {
+  padding: 3px 20px;
+}
+.bannar .main .subnav .bd ul li {
+  line-height: 46px;
+}
+.bannar .main .subnav .bd ul li a {
+  display: block;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.bannar .main .subnav .bd ul li a span {
+  float: right;
+  font-size: 14px;
+}
+
+.bannar .main .subnav .bd ul li a:hover {
+  color: #00a4ff;
+}
+
+.bannar .main .href a {
+  float: left;
+  width: 782px;
+  height: 420px;
+}
+.bannar .main .class-table {
+  float: right;
+  width: 228px;
+  height: 300px;
+  margin-top: 50px;
+  background-color: #ffffff;
+}
+.bannar .main .class-table h5 {
+  line-height: 48px;
+  text-align: center;
+  height: 48px;
+  font-size: 18px;
+  color: #ffffff;
+  background-color: #9bceea;
+}
+.bannar .main .class-table .bd {
+  padding: 0 20px;
+}
+.bannar .main .class-table .bd ul li {
+  padding: 14px 0px;
+  border-bottom: 1px #00a4ff solid;
+}
+.bannar .main .class-table .bd ul li a {
+  font-size: 14px;
+  color: #4e4e4e;
+}
+.bannar .main .class-table .bd ul li p {
+  font-size: 12px;
+  color: #a5a5a5;
+}
+.bannar .main .class-table .class-bottom {
+  text-align: center;
+}
+.bannar .main .class-table .class-bottom a {
+  margin: 6px 14px;
+  display: block;
+  width: 198px;
+  height: 38px;
+  border: 1px #00a4ff solid;
+  font-size: 16px;
+  line-height: 38px;
+  color: #00a4ff;
+  background-color: #ffffff;
+}
+.bannar .main .class-table .class-bottom a:hover {
+  background-color: #bfc6ca;
+}
+/* bannar结束 */
+
+/* tuijian开始 */
+.tuijian {
+  height: 60px;
+  background-color: #ffffff;
+  margin-top: 8px;
+  box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.tuijian .biaoqian ul li {
+  float: left;
+  line-height: 60px;
+}
+.tuijian .biaoqian ul li a {
+  padding: 0 34px;
+  border-right: 1px #bfbfbf solid;
+  font-size: 16px;
+  color: black;
+}
+.tuijian .biaoqian ul li a:hover {
+  color: #00a4ff;
+}
+.tuijian .xingqu {
+  float: right;
+  line-height: 60px;
+  margin-right: 26px;
+  font-size: 14px;
+}
+.tuijian .xingqu a {
+  color: #00a4ff;
+}
+/* tuijian结束 */
+
+/* title1开始 */
+.title1 {
+  height: 77px;
+}
+.title1 h4 {
+  float: left;
+  margin-top: 37px;
+  font-size: 20px;
+}
+.title1 ul {
+  float: left;
+  margin-left: 331px;
+  margin-top: 45px;
+}
+.title1 ul li {
+  float: left;
+  margin-right: 70px;
+}
+.title1 ul li a {
+  font-size: 16px;
+  color: black;
+}
+.title1 ul li a:hover {
+  font-size: 16px;
+  color: #00a4ff;
+}
+.title1 .quanbu {
+  float: right;
+  margin-top: 45px;
+  font-size: 12px;
+  color: #a5a5a5;
+}
+/* title1结束 */
+
+/* module1开始 */
+.module1 {
+  height: 392px;
+}
+.module1 .module1-1 {
+  float: left;
+  width: 228px;
+  height: 392px;
+  background: url(../images/153.png);
+}
+.module1 .module1-1 img {
+  margin-left: 36px;
+  margin-top: 48px;
+  width: 160px;
+}
+
+.module1 .module1-2 {
+  float: left;
+  width: 972px;
+  height: 392px;
+}
+
+.module1 .module1-2 .module1-2-1 {
+  width: 957px;
+  height: 100px;
+  background: url(../images/152.png);
+  margin-left: 15px;
+}
+.module1 .module1-2 .module1-2-1 div {
+  padding-top: 36px;
+}
+
+.module1 .module1-2 .module1-2-1 .text1 {
+  color: #ea8c11;
+  font-weight: 700;
+  margin-left: 57px;
+  font-size: 24px;
+}
+.module1 .module1-2 .module1-2-1 .text2 {
+  color: #4a7ace;
+  font-weight: 700;
+  font-size: 18px;
+  margin-left: 21px;
+}
+.module1 .module1-2 .module1-2-2 {
+  width: 957px;
+  height: 270px;
+  margin-left: 15px;
+  margin-top: 22px;
+}
+.module1 .module1-2 .module1-2-2 li {
+  float: left;
+  width: 228px;
+  height: 270px;
+  margin-right: 15px;
+  box-shadow: 0px 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.module1 .module1-2 .module1-2-2 .last {
+  margin-right: 0;
+}
+.module1 .module1-2 .module1-2-2 .img1,
+.img2,
+.img3,
+.img4 {
+  position: relative;
+  width: 228px;
+  height: 154px;
+}
+.module1 .module1-2 .module1-2-2 .img1 {
+  background: url(../images/146.png);
+}
+.module1 .module1-2 .module1-2-2 .img2 {
+  background: url(../images/145.png);
+}
+.module1 .module1-2 .module1-2-2 .img3 {
+  background: url(../images/144.png);
+}
+.module1 .module1-2 .module1-2-2 .img4 {
+  background: url(../images/143.png);
+}
+
+.module1 .module1-2 .module1-2-2 .img1 .play,
+.module1 .module1-2 .module1-2-2 .img2 .play,
+.module1 .module1-2 .module1-2-2 .img3 .play,
+.module1 .module1-2 .module1-2-2 .img4 .play {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+}
+.module1 .module1-2 .module1-2-2 .img1 .play img,
+.module1 .module1-2 .module1-2-2 .img2 .play img,
+.module1 .module1-2 .module1-2-2 .img3 .play img,
+.module1 .module1-2 .module1-2-2 .img4 .play img {
+  position: absolute;
+  width: 30px;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  margin-top: -15px;
+}
+.module1 .module1-2 .module1-2-2 .img1:hover .play,
+.module1 .module1-2 .module1-2-2 .img2:hover .play,
+.module1 .module1-2 .module1-2-2 .img3:hover .play,
+.module1 .module1-2 .module1-2-2 .img4:hover .play {
+  display: block;
+}
+
+.module1 .module1-2 .module1-2-2 .img1 .hot,
+.module1 .module1-2 .module1-2-2 .img2 .hot,
+.module1 .module1-2 .module1-2-2 .img3 .new,
+.module1 .module1-2 .module1-2-2 .img4 .new {
+  position: absolute;
+  top: 2px;
+  right: -4px;
+}
+
+.module1 .module1-2 .module1-2-2 .text {
+  padding: 25px 25px 0;
+}
+.module1 .module1-2 .module1-2-2 .text a {
+  display: block;
+  height: 52px;
+  font-size: 14px;
+  color: black;
+}
+.module1 .module1-2 .module1-2-2 .text p {
+  color: #ff7c2d;
+  font-size: 14px;
+}
+.module1 .module1-2 .module1-2-2 .text span {
+  font-size: 12px;
+  color: #999999;
+}
+/* module1结束 */
+
+/* footer开始 */
+.footer {
+  margin-top: 40px;
+  height: 417px;
+  background-color: #fff;
+}
+.footer .main {
+  height: 417px;
+}
+.footer .main .download {
+  float: left;
+  margin-left: 20px;
+  margin-top: 33px;
+}
+.footer .main .download .text {
+  margin-top: 25px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+}
+.footer .main .download .app {
+  width: 118px;
+  height: 34px;
+  margin-top: 17px;
+  line-height: 34px;
+  border: 1px #00a4ff solid;
+  text-align: center;
+}
+.footer .main .download .app a {
+  display: block;
+  width: 118px;
+  height: 34px;
+  color: #00a4ff;
+}
+.footer .main .info {
+  float: right;
+  margin-top: 35px;
+}
+.footer .main .info dt {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: #7d7d7d;
+}
+.footer .main .info dd {
+  line-height: 20px;
+  font-size: 12px;
+}
+.footer .main .info dd a {
+  color: black;
+}
+.footer .main .info .friend {
+  float: right;
+  margin-right: 30px;
+}
+.footer .main .info .intro {
+  float: right;
+  width: 216px;
+}
+.footer .main .info .about {
+  float: right;
+  width: 216px;
+}
+/* footer结束 */
+.wqw ul li {
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+.wqw ul div {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+}
+.wqw ul :nth-of-type(1) {
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
